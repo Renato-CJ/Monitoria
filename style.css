@@ -1,5 +1,170 @@
+/* Fundo escuro e estilo geral */
+
 body {
-    margin-top: 5px;
-    padding: 10px;
-    border-radius: 5px;
+    background-image: url('imagem/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 115vh;
+    margin: 0;
+    /* Cor de sobreposição com 50% de opacidade */
+    background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
+    
+    /* Combinação da imagem com a cor de fundo */
+    background-blend-mode: darken; 
+}
+
+body {
+    color: #fff;
+}
+
+nav {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Seção Sobre Mim */
+.sobre-mim .imagem {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sobre-mim .imagem img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.sobre-mim .imagem img:hover {
+    transform: scale(1.1);
+}
+
+.sobre-mim .descricao {
+    text-align: center;
+    padding: 20px;
+}
+
+.sobre-mim .descricao h1 {
+    color: #f39c12;
+    font-size: 2em;
+}
+
+.sobre-mim .descricao h2 {
+    color: #f39c12;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.sobre-mim .descricao p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+/* Seção de Redes Sociais */
+.redes-sociais {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.redes-sociais h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.icones-redes a {
+    font-size: 40px;
+    margin: 0 20px;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icones-redes a:hover {
+    color: #f39c12;
+    transform: scale(1.2);
+}
+
+/* Estilo dos links para outros projetos */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f39c12;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sobre-mim .descricao h1, .sobre-mim .descricao h2 {
+        font-size: 1.5em;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .icones-redes a {
+        font-size: 30px;
+    }
+}
+
+Adicionado sobre os icones dos projetos
+header img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 5px solid green;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    color:green;
+}
+
+footer img {
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    margin: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 2px;
+}
+
+.container {
+    padding: 0px 50px;
 }

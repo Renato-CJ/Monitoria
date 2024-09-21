@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Projetos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navegação -->
+        <nav>
+            <ul>
+                <li><a href="sobre.html">Sobre Mim</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- Seção Projetos -->
+        <section id="projetos" class="projetos">
+            <h3>Meus Projetos</h3>
+            <div class="lista-projetos">
+                <div class="projeto">
+                    <h4>Projeto 1: Pedido de namoro</h4>
+                    <a href="https://project-diadosnamorados.netlify.app/">Visite o projeto</a> <!-- Sem target="_blank" para abrir na mesma aba -->
+
+                    <h5>Projeto 2: Mario Jump</h5>
+                    <a href="https://rcdjmario.netlify.app/">Visite o projeto</a> <!-- Sem target="_blank" para abrir na mesma aba -->
+
+                    <h6>Projeto 3: Relógio digital</h6>
+                    <a href="https://project-relogiodigital.netlify.app/">Visite o projeto</a> <!-- Sem target="_blank" para abrir na mesma aba -->
+                </div>
+            </div>
+            <button id="addProjeto">Adicionar Novo Projeto</button>
+        </section>
+    </div>
+
+    <footer>
+        <a href="https://project-diadosnamorados.netlify.app" target="_blank" rel="noopener noreferrer">
+            <img src="./imageprojetos/love-svgrepo-com.svg">
+            <p>Pedido de namoro</p>
+        </a>
+    
+        <a href="https://rcdjmario.netlify.app" target="_blank" rel="noopener noreferrer">
+            <img src="./imageprojetos/game-console-pacman-svgrepo-com.svg">
+            <p>Mario Jump</p>
+        </a>
+    
+        <a href="https://project-relogiodigital.netlify.app" target="_blank" rel="noopener noreferrer">
+            <img src="./imageprojetos/time-stopwatch-watch-svgrepo-com.svg">
+            <p>Relógio Digital</p>
+        </a>
+    </footer>
+
+    <!-- Script JavaScript para adicionar novos projetos -->
+    <script>
+        document.getElementById('addProjeto').addEventListener('click', function() {
+            let nomeProjeto = prompt("Digite o nome do novo projeto:");
+            let linkProjeto = prompt("Digite o link do novo projeto:");
+            
+            if (nomeProjeto && linkProjeto) {
+                let listaProjetos = document.querySelector('.lista-projetos');
+                let novoProjeto = document.createElement('div');
+                novoProjeto.className = 'projeto';
+                novoProjeto.innerHTML = `
+                    <h4>${nomeProjeto}</h4>
+                    <a href="${linkProjeto}">Visite o projeto</a>
+                `;
+                listaProjetos.appendChild(novoProjeto);
+            }
+        });
+    </script>
+</body>
+</html>
