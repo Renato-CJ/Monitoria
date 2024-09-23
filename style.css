@@ -1,17 +1,12 @@
 /* Fundo escuro e estilo geral */
 
 body {
-    background-image: url('imagem/fundo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 115vh;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
     margin: 0;
-    /* Cor de sobreposição com 50% de opacidade */
-    background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
-    
-    /* Combinação da imagem com a cor de fundo */
-    background-blend-mode: darken; 
+    padding: 0;
+    text-align: center;
 }
 
 body {
@@ -19,7 +14,7 @@ body {
 }
 
 nav {
-    background-color: #000000;
+    
     padding: 20px;
     text-align: center;
 }

@@ -15,7 +15,7 @@
         <!-- Navegação -->
         <nav>
             <ul>
-                <li><a href="sobre.html">Sobre Mim</a></li>
+                <li><a href="index.html">Sobre Mim</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
@@ -28,14 +28,15 @@
             </div>
             <div class="descricao">
                 <h1>Renato Calixto</h1>
-                <h2>Desenvolvedor de Software & Gamer</h2>
-                <p>Atuo há quase 6 anos no setor de Call Center, onde atualmente sou Supervisor na área de Qualidade, prestando serviços para a Caixa Econômica Federal. Ao longo da minha carreira, desenvolvi uma forte habilidade em gestão de equipes e garantia da excelência nos atendimentos, buscando sempre melhorar a experiência dos clientes e a eficiência operacional.<br>Sou apaixonado por tecnologia e, paralelo ao meu trabalho, já desenvolvi projetos relacionados a aplicações Web e jogos, o que me proporcionou uma visão ampla sobre desenvolvimento de software e inovação.<br>Estou motivado a expandir meus conhecimentos e enfrentar novas oportunidades que me permitam crescer tanto profissionalmente quanto pessoalmente.
+                <h2>Desenvolvedor de Software</h2>
+                <p><strong>Sobre mim:</strong> Atuo há quase 6 anos no setor de Call Center, onde atualmente sou Supervisor na área de Qualidade, prestando serviços para a Caixa Econômica Federal. Ao longo da minha carreira, desenvolvi uma forte habilidade em gestão de equipes e garantia da excelência nos atendimentos, buscando sempre melhorar a experiência dos clientes e a eficiência operacional.<br>Sou apaixonado por tecnologia e, paralelo ao meu trabalho, já desenvolvi projetos relacionados a aplicações Web e jogos, o que me proporcionou uma visão ampla sobre desenvolvimento de software e inovação.<br>Estou motivado a expandir meus conhecimentos e enfrentar novas oportunidades que me permitam crescer tanto profissionalmente quanto pessoalmente.
                 </p>
                 <br>
                 <br>
 
                 <!-- Adicionando formação e cursos -->
-                <h3>Sobre mim:</h3>
+                 
+                
                 <p><strong>Formação:</strong> Curso Superior de Tecnologia (CST), Análise de Sistemas de Computação</p><br><br>
                 <p><strong>Cursos:</strong> Desenvolvimento Web, Curso Superior de Tecnologia (CST), Análise de Sistemas de Computação; Operador de Computador Tecnologia; Business intelligence, big data e analytics - ciência de dados; Curso de Google Workspace; Google Drive; Microsoft Office: Word (conhecimento básico), Excel (conhecimento básico), Power Point (conhecimento básico); Sistemas Operacionais.</p>
             </div>
@@ -43,71 +44,22 @@
 
         <!-- Seção de Redes Sociais -->
         <section id="redes-sociais" class="redes-sociais">
-            <h3>Siga-me nas Redes Sociais</h3>
+            <h3>Redes Sociais</h3>
             <div class="icones-redes">
                 <a href="https://www.instagram.com/nato_cj/" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://github.com/Renato-CJ" target="_blank">
+                <a href="https://github.com/seu_github" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/renato-calixto-de-jesus-0b9153285/" target="_blank">
+                <a href="https://www.linkedin.com/in/seu_linkedin" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
         </section>
     </div>
 
-    sssssssssssss
-    body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin-top: 50px;
-    }
-    .emoji {
-        font-size: 80px;
-        cursor: pointer;
-        transition: transform 0.2s;
-    }
-    .emoji:hover {
-        transform: scale(1.2); /* Aumenta o emoji quando o mouse passa por cima */
-    }
-    .contador {
-        font-size: 24px;
-        margin-top: 10px;
-    }
-</style>
-</head>
-<body>
-
-<h1>Reaja com um emote! 😍</h1>
-
-<div class="emoji" id="emoji">👍</div> <!-- Emote interativo -->
-<div class="contador">Reações: <span id="reaction-count">0</span></div>
-
-<script>
-    // Obtém o número de reações armazenado no localStorage
-    let reactionCount = localStorage.getItem('reactionCount');
-
-    // Se não houver reações armazenadas, inicializa em 0
-    if (reactionCount === null) {
-        reactionCount = 0;
-    }
-
-    // Exibe o número de reações na página
-    document.getElementById('reaction-count').textContent = reactionCount;
-
-    // Função que será chamada ao clicar no emoji
-    document.getElementById('emoji').addEventListener('click', function() {
-        reactionCount++; // Incrementa o contador de reações
-        document.getElementById('reaction-count').textContent = reactionCount; // Atualiza o texto
-        localStorage.setItem('reactionCount', reactionCount); // Armazena o novo valor no localStorage
-
-        // Efeito temporário de animação no clique
-        this.style.transform = 'scale(1.5)';
-        setTimeout(() => this.style.transform = 'scale(1)', 200); // Volta ao tamanho original após 200ms
-    });
-</script>
-
+    <audio src="LinkinPark.mp3.mp3" autoplay controls=True></audio>
+    
 </body>
 </html>
