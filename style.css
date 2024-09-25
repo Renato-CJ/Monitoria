@@ -1,12 +1,11 @@
 /* Fundo escuro e estilo geral */
 
 body {
-    background-color: #1a1a1a;
-    color: #fff;
-    font-family: 'Press Start 2P', cursive;
     margin: 0;
-    padding: 0;
-    text-align: center;
+    height: 100vh;
+    background: linear-gradient(270deg, #000000, #0e0f0f, #080a0a, #1a1d1d);
+    background-size: 800% 800%;
+    animation: animarFundo 10s ease infinite;
 }
 
 body {
@@ -51,6 +50,21 @@ nav ul li a:hover {
     height: 250px;
     object-fit: cover;
     transition: transform 0.5s ease;
+    border-radius: 50%; /* Deixa a imagem com bordas redondas */
+    padding: 2px; /* Espaçamento entre a imagem e a borda */
+     background: conic-gradient(
+         from 0deg,
+           red,
+           yellow,
+           green,
+           cyan,
+           blue,
+           magenta,
+           red
+        ); /* Gradiente circular com várias cores */
+            background-size: 300%; /* Aumenta o tamanho do gradiente para a animação */
+            animation: snakeAnimado 5s linear infinite; /* Animação de 5 segundos que roda infinitamente */
+        
 }
 
 .sobre-mim .imagem img:hover {
@@ -162,4 +176,29 @@ footer p {
 
 .container {
     padding: 0px 50px;
+}
+
+
+
+@keyframes snakeAnimado {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 300% 50%; /* Move o gradiente em torno da borda */
+    }
+
+}
+
+
+@keyframes animarFundo {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;  /* Move o fundo do site */
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
